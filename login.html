@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Login e registro</title>
+        <meta name="description" content="Faça login ou registre-se">
+    
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Login e registro"/>
+        <meta property="og:description" content="Faça login ou registre-se"/>
+        <meta property="og:url" content="https://amigosdejesus.com"/>
+        <!--<meta property="og:image" content="https://amigosdejesus.com/imgs/Rectangle20.jpg"/>-->
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <div><a href="index.html"><img src="imgs/sitelogo.svg" alt="jesus logo"></a></div>
+        <div class="logheader">
+            <h1 class="logtitle">Fundação Amigos de Jesus</h1>
+            <hr class="sectionline">
+            <div class="logframe">
+                <h2><span>L</span>ogin:</h2>
+                <form id="login" name="Login">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="Nome">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" name="Senha">
+                    <button type="button" onclick="submitLogin()">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <hr class="sectionline">
+        <div class="regframe">
+            <h2><span>R</span>egistro:</h2>
+            <form id="registro">
+                <label for="regnome">Nome:</label>
+                <input id="regnome" type="text" name="Regnome">
+                <label for="regsenha">Senha:</label>
+                <input id="regsenha" type="password" name="Regsenha">
+                <label>Você acredita em Deus?</label>
+                <div class="acreditoframe">
+                    <label for="sim">Sim</label>
+                    <input id="sim" type="checkbox" name="Sim">
+                    <label for="acredito">Acredito</label>
+                    <input id="acredito" type="checkbox" name="Acredito">
+                </div>
+                <label for="salario">Qual o seu salário mensal?</label>
+                <input id="salario" type="number" name="Salario">
+                <div class="acreditoframe">
+                    <input id="euli" type="checkbox" name="Euli">
+                    <label for="euli">Eu li e aceito os termos de uso</label>
+                </div>
+                <button type="button" onclick="submitRegister()">Enviar</button>
+            </form>
+        </div>
+        <hr class="footerline">
+        <p class="backbutton"><a href="index.html">Voltar</a></p>
+    </div>    
+    <script src="js/login.js"></script>
+</body>
+</html>
